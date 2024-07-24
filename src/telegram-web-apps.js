@@ -464,7 +464,7 @@
     WebView.postEvent('web_app_setup_closing_behavior', false, {need_confirmation: isClosingConfirmationEnabled});
   }
 
-  var isVerticalSwipesEnabled = true;
+  var isVerticalSwipesEnabled = false;
   function toggleVerticalSwipes(enable_swipes) {
     if (!versionAtLeast('7.7')) {
       console.warn('[Telegram.WebApp] Changing swipes behavior is not supported in version ' + webAppVersion);
