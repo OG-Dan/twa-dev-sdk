@@ -1,5 +1,5 @@
 {
-  "name": "twa-dev-sdk",
+  "name": "twa-sdk-dev",
   "version": "7.7.3",
   "main": "dist/index.js",
   "sideEffects": [
