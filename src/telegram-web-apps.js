@@ -464,7 +464,7 @@
     WebView.postEvent('web_app_setup_closing_behavior', false, {need_confirmation: isClosingConfirmationEnabled});
   }
 
-  var isVerticalSwipesEnabled = false;
+  var isVerticalSwipesEnabled = true;
   function toggleVerticalSwipes(enable_swipes) {
     if (!versionAtLeast('7.7')) {
       console.warn('[Telegram.WebApp] Changing swipes behavior is not supported in version ' + webAppVersion);
@@ -493,7 +493,7 @@
           themeParams.bg_color == color) {
         color = 'bg_color';
       } else if (themeParams.secondary_bg_color &&
-          themeParams.secondary_bg_color == color) {
+                 themeParams.secondary_bg_color == color) {
         color = 'secondary_bg_color';
       }
     }
@@ -1841,7 +1841,7 @@
             button_type == 'cancel') {
           // no params needed
         } else if (button_type == 'default' ||
-            button_type == 'destructive') {
+                   button_type == 'destructive') {
           var text = '';
           if (typeof button.text !== 'undefined') {
             text = strTrim(button.text);
@@ -2015,4 +2015,5 @@
   WebView.onEvent('custom_method_invoked', onCustomMethodInvoked);
   WebView.postEvent('web_app_request_theme');
   WebView.postEvent('web_app_request_viewport');
+
 })();
