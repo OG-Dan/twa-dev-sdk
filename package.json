@@ -1,6 +1,6 @@
 {
   "name": "twa-sdk-dev",
-  "version": "7.7.3",
+  "version": "7.7.5",
   "main": "dist/index.js",
   "sideEffects": [
     "./dist/telegram-web-apps.js"
@@ -24,7 +24,7 @@
       ]
     }
   },
-  "repository": "https://github.com/twa-dev/sdk.git",
+  "repository": "https://github.com/OG-Dan/twa-dev-sdk.git",
   "keywords": [
     "telegram",
     "telegram web apps",
